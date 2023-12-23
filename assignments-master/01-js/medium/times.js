@@ -9,5 +9,15 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
+    let sum =0;
+    const startT = Date.now();
+    for(let i=1; i<=n;i++){
+        sum = sum +i;
+    }
+    const endT = Date.now();
+
+    console.log("time taken in milisecounds ="+(endT-startT));
+
     return 0.01;
 }
+calculateTime(10000000000);

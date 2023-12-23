@@ -1,11 +1,10 @@
 let count =0;
-function timeoutfun(){
+
+
+setInterval( function myCounter(){
     count ++;
- console.log("count value is "+count)
-
-}
-
-setInterval( timeoutfun,1000);
+    console.log("count value is "+count)
+},1000);
 
 
 
